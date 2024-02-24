@@ -18,7 +18,6 @@ _PublishedWebsites/
 
 # Arquivos de projeto do Visual Studio
 .vscode/
-*.sln
 *.suo
 *.user
 *.userosscache
