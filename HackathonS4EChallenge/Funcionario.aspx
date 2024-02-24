@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Funcionario.aspx.vb" Inherits="HackathonS4EChallenge.Funcionario1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-<link href="Style/style.css" rel="stylesheet" />
+    <link href="Style/style.css" rel="stylesheet" />
 
 <h1 style="margin-bottom: 2rem"> Cadastro de Funcionário
     </h1>

@@ -207,6 +207,8 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Setor.aspx" />
     <Content Include="Style\Style.css" />
+    <Content Include="VisualizarFunc.aspx" />
+    <Content Include="VisualizarSetor.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -297,6 +299,20 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.vb">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarFunc.aspx.designer.vb">
+      <DependentUpon>VisualizarFunc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarFunc.aspx.vb">
+      <DependentUpon>VisualizarFunc.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VisualizarSetor.aspx.designer.vb">
+      <DependentUpon>VisualizarSetor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualizarSetor.aspx.vb">
+      <DependentUpon>VisualizarSetor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

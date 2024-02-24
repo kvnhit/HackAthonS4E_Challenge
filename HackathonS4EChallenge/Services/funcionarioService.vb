@@ -23,4 +23,12 @@
             Throw ex
         End Try
     End Function
+    Public Function Vizualizar() As DataView
+        Try
+            Dim funcDao As New FuncionarioDao
+            Return funcDao.GetData()
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
 End Class

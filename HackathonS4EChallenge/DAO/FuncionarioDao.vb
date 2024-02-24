@@ -8,6 +8,15 @@
             Throw ex
         End Try
     End Sub
+    Public Function GetData() As DataView
+        Try
+            Dim sql = $"select Setor.NomeSetor as Setor, Setor.Gerente as Gerente, NomeFunc as Funcionário, SalarioBase as Salário from Funcionario Func Join Setor on Setor.idSetor = Func.Setor"
+            Dim conection As New Connection
+            Return conection.Execute(sql)
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
     Public Function GetSelectCargo() As DataView
         Try
             Dim sql = $"select idCargo as id, NomeCargo as nome from Cargo"

@@ -15,4 +15,21 @@
             Throw ex
         End Try
     End Function
+    Public Function Vizualizar() As DataView
+        Try
+            Dim setorDao As New SetorDao
+            Return setorDao.GetData()
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+
+    Public Function VizualizarTotal() As DataView
+        Try
+            Dim setorDao As New SetorDao
+            Return setorDao.GetDataTotal()
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
 End Class
