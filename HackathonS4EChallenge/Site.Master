@@ -15,7 +15,8 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <link href="Style/style.css" rel="stylesheet" />
+    
 </head>
 <body>
     <form runat="server">
@@ -39,6 +40,7 @@
         </asp:ScriptManager>
 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+            
             <div class="container">
                 <a class="navbar-brand" runat="server" href="~/">Hackathon S4E</a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar a navegação" aria-controls="navbarSupportedContent"
@@ -48,10 +50,26 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Página Inicial</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contato</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Setor">Setor</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Funcionario">Funcionario</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Funcionario">Funcionário</a></li>
+
+                        <li class="nav-item" id="liSetor">
+                            <a class="nav-link" runat="server" >Setores</a>
+                            <ul class="submenu">
+                                <li> <a runat="server" href="~/Setor">Cadastrar Setor </a></li>
+                                <li> <a runat="server" href="~/VisualizarSetor">Visualizar Setor </a></li>
+                            </ul>
+                        </li>                       
+
+                        
+
+                        <%--<li class="nav-item" id="liFuncionario">
+                            <a class="nav-link" runat="server" >Funcionários</a>
+                            <ul class="submenu">
+                                <li> <a runat="server" href="~/Funcionario">Cadastrar Funcionário </a></li>
+                                <li> <a runat="server" href="~/">Visualizar Funcionários </a></li>
+                            </ul>
+                        </li>  --%>
+                        
                     </ul>
                 </div>
             </div>
@@ -68,5 +86,25 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
     </asp:PlaceHolder>
+    <script>
+        document.querySelector('#liSetor').addEventListener('mouseover', function () {
+            debugger
+            document.querySelector('.submenu').style.display = 'block';
+        });
+        document.querySelector('#liSetor').addEventListener('mouseout', function () {
+            debugger
+            document.querySelector('.submenu').style.display = 'none';
+            });
+            
+        //document.querySelector('#liFuncionario').addEventListener('mouseover', function () {
+        //    debugger
+        //    document.querySelector('.submenu').style.display = 'block';
+        //});
+                       
+        //document.querySelector('#liFuncionario').addEventListener('mouseout', function () {
+        //    debugger
+        //    document.querySelector('.submenu').style.display = 'none';
+        //});
+    </script>
 </body>
 </html>
