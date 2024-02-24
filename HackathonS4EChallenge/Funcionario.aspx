@@ -3,10 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <link href="Style/style.css" rel="stylesheet" />
 
-<h1 style="margin-bottom: 2rem"> Cadastro de Funcionário
-    </h1>
+<h1 style="margin-bottom: 2rem"> Cadastro de Funcionário  </h1>
     
 <div class="forms">
+      
            
     <asp:Label ID="LBL_NomeFuncionario" runat="server" Text="Nome do Funcionário" CssClass="aligned-label"></asp:Label>
     <asp:TextBox ID="TXT_NomeFuncionario" runat="server" MaxLength="30" CssClass="aligned-textbox" RequiredFieldValidator="true" ></asp:TextBox>
@@ -26,5 +26,6 @@
 
     
     <asp:Button CssClass="btn btn-primary" ID="BTN_Salvar" runat="server" Text="Salvar" style="margin-top: 1rem"/>
+       
     </div>
 </asp:Content>

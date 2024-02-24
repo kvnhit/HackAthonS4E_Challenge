@@ -16,6 +16,8 @@
             .Gerente = 3
             }
         setorService.Cadastrar(setor)
+        ScriptManager.RegisterClientScriptBlock(Me, GetType(Page), "", "<script language=""javascript"">alert('Setor criado com sucesso.');</script>", False)
+
     End Sub
     Protected Sub PopulateDropDownGerente()
         Dim setorService As New SetorServices

@@ -19,6 +19,7 @@
             .Setor = DropDownList1_Setor.SelectedValue
             }
         funcService.Cadastrar(func)
+        ScriptManager.RegisterClientScriptBlock(Me, GetType(Page), "", "<script language=""javascript"">alert('Funcipnário cadastrado com sucesso.');</script>", False)
     End Sub
     Protected Sub PopulateDropDownCargo()
         Dim funcService As New funcionarioService
@@ -34,4 +35,6 @@
         DropDownList1_Setor.DataValueField = "id"
         DropDownList1_Setor.DataBind()
     End Sub
+
+
 End Class
