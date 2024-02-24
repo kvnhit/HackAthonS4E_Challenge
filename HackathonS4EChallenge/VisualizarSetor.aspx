@@ -1,5 +1,7 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="VisualizarSetor.aspx.vb" Inherits="HackathonS4EChallenge.VisualizarSetor" %>
+﻿<%@ Page Title="Visalizar Setor" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="VisualizarSetor.aspx.vb" Inherits="HackathonS4EChallenge.VisualizarSetor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+    <h1 style="margin-bottom: 2rem"> Visualização de Setor  </h1>
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" CellPadding="14" ForeColor="#333333" GridLines="None">
     <AlternatingRowStyle BackColor="White" />
     <EditRowStyle BackColor="#2461BF" />
