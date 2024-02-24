@@ -4,41 +4,33 @@
 
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+            <h1 style="margin-bottom: 16px" id="aspnetTitle">Hackathon S4E</h1>
+            <p class="lead"> O Evento tem como prosposta descobrir novos talentos da tecnologia.</p>
+            <p class="lead"> No primeiro dia de evento que aconteceu no dia 17/02, foram apresentados dois workshops,um sobre ASP.NET 
+                e outro sobre SQL Server.
+            </p>
+        </section>
+        <section class="col-md-4" aria-labelledby="hostingTitle">
+            <h2 id="hostingTitle">O Desafio</h2>
+            <p class="lead">
+                O segundo dia do evento que aconteceu no dia 24/02, os participantes se reuniram em duplas e tiveram 
+                que criar aplicações de acordo com o desafia passado. 
+            </p>
+            <ul>
+                <li>Gerenciar Funcipnário</li>
+                <li>Gerenciar Vendas</li>
+                <li>Gerenciar Tarefas</li>
+                <li>Gerenciar Disciplinas</li>
+                <li>Gerenciar Conta Bancária</li>
+            </ul>            
         </section>
 
-        <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
-        </div>
+       <section aria-labelledby="hostingTitle">
+            
+                <h3>A Dupla</h3>
+                <p> Daniela Botelho  - <a class="btn btn-default" href="https://github.com/danibotelho">Github &raquo;</a></p>
+                <p> Kevein Hitzschky - <a class="btn btn-default" href="https://github.com/kvnhit">Github &raquo;</a> </p>
+       </section>
     </main>
 
 </asp:Content>
