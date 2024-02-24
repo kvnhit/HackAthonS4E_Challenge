@@ -17,7 +17,7 @@
             }
         setorService.Cadastrar(setor)
         ScriptManager.RegisterClientScriptBlock(Me, GetType(Page), "", "<script language=""javascript"">alert('Setor criado com sucesso.');</script>", False)
-
+        Response.Redirect("VisualizarSetor.aspx")
     End Sub
     Protected Sub PopulateDropDownGerente()
         Dim setorService As New SetorServices

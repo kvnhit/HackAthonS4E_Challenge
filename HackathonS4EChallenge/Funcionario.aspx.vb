@@ -19,7 +19,8 @@
             .Setor = DropDownList1_Setor.SelectedValue
             }
         funcService.Cadastrar(func)
-        ScriptManager.RegisterClientScriptBlock(Me, GetType(Page), "", "<script language=""javascript"">alert('Funcipnário cadastrado com sucesso.');</script>", False)
+        ScriptManager.RegisterClientScriptBlock(Me, GetType(Page), "", "<script language=""javascript"">alert('Funcionário cadastrado com sucesso.');</script>", False)
+        Response.Redirect("VisualizarFunc.aspx")
     End Sub
     Protected Sub PopulateDropDownCargo()
         Dim funcService As New funcionarioService

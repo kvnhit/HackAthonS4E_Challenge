@@ -21,16 +21,27 @@ Public Class SetorDao
     End Function
     Public Function GetData() As DataView
         Try
-            Dim sql = $"select Setor.NomeSetor as Setor, Setor.Gerente as Gerente, NomeFunc as Funcionário, SalarioBase as Salário from Funcionario Func Join Setor on Setor.idSetor = Func.Setor"
-            Dim conection As New Connection
-            Return conection.Execute(sql)
-        Catch ex As Exception
-            Throw ex
-        End Try
-    End Function
-    Public Function GetDataTotal() As DataView
-        Try
-            Dim sql = $"select (select 'R$') as 'Total  ', SUM(SalarioBase) as Salário from Funcionario"
+            Dim sql = $"SELECT 
+                        Setor.NomeSetor AS Setor,
+                        (SELECT R.NomeGerente FROM RelacaoGerenteFunc R WHERE R.idRel = Setor.Gerente) AS Gerente,
+                        NomeFunc AS Funcionário,
+                        FORMAT(SalarioBase, 'C', 'pt-BR') AS Salário
+                    FROM 
+                        Funcionario Func
+                    JOIN 
+                        Setor ON Setor.idSetor = Func.Setor
+
+                    UNION
+
+                    SELECT 
+                        'Total' AS Setor,
+                        NULL AS Gerente,
+                        NULL AS Funcionário,
+                        FORMAT(SUM(SalarioBase), 'C', 'pt-BR') AS Salário
+                    FROM 
+                        Funcionario Func
+                    JOIN 
+                        Setor ON Setor.idSetor = Func.Setor;"
             Dim conection As New Connection
             Return conection.Execute(sql)
         Catch ex As Exception
