@@ -10,7 +10,12 @@
     End Sub
     Public Function GetData() As DataView
         Try
-            Dim sql = $"select Setor.NomeSetor as Setor, Setor.Gerente as Gerente, NomeFunc as Funcionário, SalarioBase as Salário from Funcionario Func Join Setor on Setor.idSetor = Func.Setor"
+            Dim sql = $"Select NomeFunc as Nome, 
+                        (select C.NomeCargo from Cargo C where C.idCargo = F.Cargo) as Cargo, 
+                        (select S.NomeSetor from Setor S where S.idSetor = F.Setor) as Setor, 
+                        SalarioBase as Salário, 
+                        FORMAT(DataAdmissao, 'yyyy-MM-dd') as 'Data de Admissão'
+                        from Funcionario F"
             Dim conection As New Connection
             Return conection.Execute(sql)
         Catch ex As Exception

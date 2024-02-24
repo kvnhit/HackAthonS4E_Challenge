@@ -8,11 +8,8 @@
     Protected Sub PopulateGridSetor()
         Dim setorService As New SetorServices
         Dim data = setorService.Vizualizar()
-        Dim data2 = setorService.VizualizarTotal()
         GridView1.DataSource = data
         GridView1.DataBind()
-        GridView2.DataSource = data2
-        GridView2.DataBind()
     End Sub
 
 End Class

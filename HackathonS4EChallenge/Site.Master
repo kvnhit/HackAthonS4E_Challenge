@@ -51,7 +51,7 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Página Inicial</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Funcionario">Funcionário</a></li>
-
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/VisualizarFunc">Visualizar</a></li>
                         <li class="nav-item" id="liSetor">
                             <a class="nav-link" runat="server" >Setores</a>
                             <ul class="submenu">
