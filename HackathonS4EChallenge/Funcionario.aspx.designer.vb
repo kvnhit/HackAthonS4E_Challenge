@@ -41,13 +41,13 @@ Partial Public Class Funcionario1
     Protected WithEvents LBL_Cargo As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Controle TXT_Cargo.
+    '''Controle DropDownList_Cargo.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TXT_Cargo As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DropDownList_Cargo As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Controle LBL_Salario.

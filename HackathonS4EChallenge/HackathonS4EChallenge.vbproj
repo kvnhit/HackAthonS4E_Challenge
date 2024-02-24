@@ -228,6 +228,7 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="DAO\Connection.vb" />
+    <Compile Include="DAO\FuncionarioDao.vb" />
     <Compile Include="DAO\SetorDao.vb" />
     <Compile Include="Default.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
@@ -267,6 +268,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Services\funcionarioService.vb" />
     <Compile Include="Services\SetorServices.vb" />
     <Compile Include="Setor.aspx.designer.vb">
       <DependentUpon>Setor.aspx</DependentUpon>

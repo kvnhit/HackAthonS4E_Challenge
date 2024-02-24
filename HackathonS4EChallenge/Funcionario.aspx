@@ -3,7 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <link href="Style/style.css" rel="stylesheet" />
 
-<h1 style="margin-bottom: 2rem"> Cadastro de Funcionário</h1>
+<h1 style="margin-bottom: 2rem"> Cadastro de Funcionário
+    </h1>
     
 <div class="forms">
            
@@ -11,7 +12,7 @@
     <asp:TextBox ID="TXT_NomeFuncionario" runat="server" MaxLength="30" CssClass="aligned-textbox" RequiredFieldValidator="true" ></asp:TextBox>
    
     <asp:Label ID="LBL_Cargo" runat="server" Text="Cargo" CssClass="aligned-label"></asp:Label>
-    <asp:TextBox ID="TXT_Cargo" runat="server" MaxLength="30" CssClass="aligned-textbox" RequiredFieldValidator="true"></asp:TextBox>
+    <asp:DropDownList ID="DropDownList_Cargo" runat="server" CssClass="aligned-textbox"></asp:DropDownList>
 
     <asp:Label ID="LBL_Salario" runat="server" Text="Salário" CssClass="aligned-label"></asp:Label>
     <asp:TextBox ID="TXT_Salario" runat="server" maxlength="20" oninput="formatarSalario(this)" AutoPostBack="true" Text="R$ " RequiredFieldValidator="true" > </asp:TextBox>
@@ -20,7 +21,7 @@
     <asp:DropDownList ID="DropDownList1_Setor" runat="server" CssClass="aligned-textbox"></asp:DropDownList>
     
    <asp:Label ID="LBL_DataAdmissao" runat="server" Text="Data da Admissão" CssClass="aligned-label"></asp:Label>
-   <asp:TextBox ID="TXT_DataAdmissao" runat="server" TextMode="DateTime" CssClass="aligned-textbox" RequiredFieldValidator="true"></asp:TextBox>
+   <asp:TextBox ID="TXT_DataAdmissao" runat="server" Type="date" CssClass="aligned-textbox" RequiredFieldValidator="true"></asp:TextBox>
     
 
     

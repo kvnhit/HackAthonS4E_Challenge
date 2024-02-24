@@ -51,7 +51,7 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contato</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Setor">Setor</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Funcinario">Funcinario</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Funcionario">Funcionario</a></li>
                     </ul>
                 </div>
             </div>
