@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Setor.aspx.vb" Inherits="HackathonS4EChallenge.Setor1" %>
+﻿<%@ Page Title="Setores" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Setor.aspx.vb" Inherits="HackathonS4EChallenge.Setor1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link href="Style/style.css" rel="stylesheet" />
 

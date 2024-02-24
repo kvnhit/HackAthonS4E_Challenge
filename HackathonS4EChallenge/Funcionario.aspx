@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Funcionario.aspx.vb" Inherits="HackathonS4EChallenge.Funcionario1" %>
+﻿<%@ Page Title="Funcionários" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Funcionario.aspx.vb" Inherits="HackathonS4EChallenge.Funcionario1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <link href="Style/style.css" rel="stylesheet" />
@@ -15,7 +15,7 @@
     <asp:DropDownList ID="DropDownList_Cargo" runat="server" CssClass="aligned-textbox"></asp:DropDownList>
 
     <asp:Label ID="LBL_Salario" runat="server" Text="Salário" CssClass="aligned-label"></asp:Label>
-    <asp:TextBox ID="TXT_Salario" runat="server" maxlength="20" oninput="formatarSalario(this)" AutoPostBack="true" Text="R$ " RequiredFieldValidator="true" > </asp:TextBox>
+    <asp:TextBox ID="TXT_Salario" runat="server" maxlength="20" AutoPostBack="true" PlaceHolder="R$ " RequiredFieldValidator="true" > </asp:TextBox>
     
     <asp:Label ID="LBL_Setor" runat="server" Text="Setor" CssClass="aligned-label"></asp:Label>
     <asp:DropDownList ID="DropDownList1_Setor" runat="server" CssClass="aligned-textbox"></asp:DropDownList>

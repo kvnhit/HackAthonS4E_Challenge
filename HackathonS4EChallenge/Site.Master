@@ -50,25 +50,23 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Página Inicial</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Funcionario">Funcionário</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/VisualizarFunc">Visualizar</a></li>
+
                         <li class="nav-item" id="liSetor">
                             <a class="nav-link" runat="server" >Setores</a>
                             <ul class="submenu">
                                 <li> <a runat="server" href="~/Setor">Cadastrar Setor </a></li>
-                                <li> <a runat="server" href="~/VisualizarSetor">Visualizar Setor </a></li>
+                                <li> <a runat="server" href="~/VisualizarSetor">Visualizar Setores </a></li>
                             </ul>
                         </li>                       
+                                          
 
-                        
-
-                        <%--<li class="nav-item" id="liFuncionario">
+                        <li class="nav-item" id="liFuncionario">
                             <a class="nav-link" runat="server" >Funcionários</a>
                             <ul class="submenu">
-                                <li> <a runat="server" href="~/Funcionario">Cadastrar Funcionário </a></li>
-                                <li> <a runat="server" href="~/">Visualizar Funcionários </a></li>
+                                <li> <a runat="server" href="~/funcionario">Cadastrar Funcionário </a></li>
+                                <li> <a runat="server" href="~/VisualizarFunc">Visualizar Funcionários </a></li>
                             </ul>
-                        </li>  --%>
+                        </li>  
                         
                     </ul>
                 </div>
@@ -87,24 +85,33 @@
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
     </asp:PlaceHolder>
     <script>
-        document.querySelector('#liSetor').addEventListener('mouseover', function () {
-            debugger
-            document.querySelector('.submenu').style.display = 'block';
-        });
-        document.querySelector('#liSetor').addEventListener('mouseout', function () {
-            debugger
-            document.querySelector('.submenu').style.display = 'none';
+      
+        document.addEventListener("DOMContentLoaded", function () {
+            var lifuncionario = document.getElementById("liSetor");
+            var submenu = lifuncionario.querySelector('.submenu');
+
+            lifuncionario.addEventListener('mouseover', function () {
+                submenu.style.display = 'block';
             });
-            
-        //document.querySelector('#liFuncionario').addEventListener('mouseover', function () {
-        //    debugger
-        //    document.querySelector('.submenu').style.display = 'block';
-        //});
-                       
-        //document.querySelector('#liFuncionario').addEventListener('mouseout', function () {
-        //    debugger
-        //    document.querySelector('.submenu').style.display = 'none';
-        //});
+
+            lifuncionario.addEventListener('mouseout', function () {
+                submenu.style.display = 'none';
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var lifuncionario = document.getElementById("liFuncionario");
+            var submenu = lifuncionario.querySelector('.submenu');
+
+            lifuncionario.addEventListener('mouseover', function () {
+                submenu.style.display = 'block';
+            });
+
+            lifuncionario.addEventListener('mouseout', function () {
+                submenu.style.display = 'none';
+            });
+        });
+        
     </script>
 </body>
 </html>
